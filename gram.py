@@ -7,14 +7,21 @@ Created on Thu Feb 25 21:46:50 2021
 import numpy as np
 
 def menu():
+    
    j = 0
    a1 = np.array([[0.7140299],[0.6918437],[0.6748934],[0.7884872]])
    a2 = np.array([[0.6918437],[1.2492256],[1.0307285],[0.6275049]])
    a3 = np.array([[0.6748934],[1.0307285],[1.0893471],[0.5567456]])
    a4 = np.array([[0.7884872],[0.6275049],[0.5567456],[0.9550583]])
    
+   
 
-   while (j < 6):
+   while (j < 5):
+       
+       print("a1 = ",a1)
+       print("a2 = ", a2)
+       print("a3 = ",a3)
+       print("a4 = ",a4)
     
        q1=a1/np.sqrt(a1[0][0]**2 +a1[1][0]**2+a1[2][0]**2+a1[3][0]**2)
        print("q1 = ",q1)
@@ -70,7 +77,7 @@ def menu():
        Q = np.transpose(Q)
        print("Q = ", Q)
       
-       print("RQ = ", np.dot(R,Q))
+       print("A = RQ = ", np.dot(R,Q))
        
        A = np.dot(R,Q)
      
