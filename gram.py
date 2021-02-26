@@ -16,7 +16,7 @@ def menu():
    
    
 
-   while (j < 5):
+   while (j < 7):
        
        print("a1 = ",a1)
        print("a2 = ", a2)
