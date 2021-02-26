@@ -68,7 +68,7 @@ def menu():
            
        Q = np.array([q1_modificado,q2_modificado,q3_modificado,q4_modificado])
        Q = np.transpose(Q)
-       #print("Q = ", Q)
+       print("Q = ", Q)
       
        print("RQ = ", np.dot(R,Q))
        
